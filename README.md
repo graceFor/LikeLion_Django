@@ -1,5 +1,7 @@
 # LikeLion_Django
 
+## [Setting]
+
 1. 가상환경 생성
    python3 -m venv [가상환경명]
 
