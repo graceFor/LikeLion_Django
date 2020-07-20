@@ -15,6 +15,7 @@
    django-admin startproject [프로젝트명]
 
    - Django 서버 작동
+
      python manage.py runserver
 
 5. App 생성
