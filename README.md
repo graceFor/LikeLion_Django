@@ -10,3 +10,12 @@
 
 3. 가상환경 비활성화
    deactivate
+
+4. Django 프로젝트 생성
+   django-admin startproject [프로젝트명]
+
+   - Django 서버 작동
+     python manage.py runserver
+
+5. App 생성
+   python manage.py startapp [app명]
