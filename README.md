@@ -20,3 +20,7 @@
 
 5. App 생성
    python manage.py startapp [app명]
+
+---
+
+- [x] []
