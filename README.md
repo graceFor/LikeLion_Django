@@ -23,4 +23,4 @@
 
 ---
 
-- [x] []
+- [x] [Django_basic](https://github.com/graceFor/LikeLion_Django/tree/master/Django_basic)
