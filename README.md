@@ -24,3 +24,5 @@
 ---
 
 - [x] [Django_basic](https://github.com/graceFor/LikeLion_Django/tree/master/Django_basic)
+
+- [x] [Wordcount_project](https://github.com/graceFor/LikeLion_Django/tree/master/Wordcount_project)
