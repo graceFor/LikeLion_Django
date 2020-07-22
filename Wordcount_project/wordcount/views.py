@@ -9,3 +9,9 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def result(request):
+    text = request.GET['fulltext']
+    words = text.split()
+    return render(request, 'result.html', {'full': text})
