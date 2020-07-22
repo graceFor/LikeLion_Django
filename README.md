@@ -32,4 +32,4 @@
 
 - [x] [Wordcount_project](https://github.com/graceFor/LikeLion_Django/tree/master/Wordcount_project)
 
-- [x][model_project](https://github.com/graceFor/LikeLion_Django/tree/master/Model_project)
+- [x] [Model_project](https://github.com/graceFor/LikeLion_Django/tree/master/Model_project)
