@@ -14,3 +14,6 @@
    - 그 후에 admin.py에 데이터 등록
 
 -> 데이터베이스에 어떻게 생긴 데이터를 넣을지 정의하고, 거기에 admin 권한으로 데이터 집어넣기
+
+- queryset method
+  - 모델.queryset(objects).method
