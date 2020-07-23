@@ -12,3 +12,7 @@ def home(request):
 def detail(request, blog_id):
     blog_detail = get_object_or_404(Blog, pk=blog_id)
     return render(request, 'detail.html', {'details': blog_detail})
+
+
+def new(request):
+    return render(request, 'new.html')
