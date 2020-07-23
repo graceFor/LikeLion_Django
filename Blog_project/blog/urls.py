@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 import blogapp.views
 import recent.views
 from django.conf import settings
@@ -12,5 +12,5 @@ urlpatterns = [
     path('news_blog/new', blogapp.views.new, name='new'),
     path('news_blog/create', blogapp.views.create, name='create'),
     path('recent/', recent.views.recent, name='recent'),
-    path('accounts/', include('account.urls')),
+    path('account/', include('account.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
