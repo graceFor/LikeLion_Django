@@ -6,6 +6,8 @@
     <title>Kakao map</title>
   </head>
   <body>
+  <br>
+  <h3>for kakao map</h3>
     <div id="map" style="width: 500px; height: 400px;"></div>
     <script
       type="text/javascript"
@@ -14,12 +16,14 @@
     <script>
       var container = document.getElementById("map");
       var options = {
-        center: new kakao.maps.LatLng(37.574964, 127.181273),
+        center: new kakao.maps.LatLng(37.576162, 127.182110),
         level: 3,
       };
 
       var map = new kakao.maps.Map(container, options);
     </script>
+    <br>
+    <a href="{% url 'index'%}"> home으로 </a>
   </body>
 </html>
 
