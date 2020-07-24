@@ -1,9 +1,16 @@
-from django.shortcuts import render
-
+from django.shortcuts import render, redirect
+from .models import Locate
 # Create your views here.
 
 
 def index(request):
+    # if request.method == 'POST':
+    #locate = Locate()
+    #locate.we = request.POST['we']
+    #locals.ku = request.POST['ku']
+    # return render(request, 'kakao.html', {'locates': locate})
+    # else:
+    # redirect('index')
     return render(request, 'index.html')
 
 
