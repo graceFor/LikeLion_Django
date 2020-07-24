@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
+
+
+def kakao(request):
+    return render(request, 'kakao.html')

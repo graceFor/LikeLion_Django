@@ -5,5 +5,6 @@ import mapapp.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mapapp.views.index),
+    path('', mapapp.views.index, name="index"),
+    path('map/kakao/', mapapp.views.kakao, name="kakao"),
 ]
