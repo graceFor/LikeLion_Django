@@ -4,13 +4,6 @@ from .models import Locate
 
 
 def index(request):
-    # if request.method == 'POST':
-    #locate = Locate()
-    #locate.we = request.POST['we']
-    #locals.ku = request.POST['ku']
-    # return render(request, 'kakao.html', {'locates': locate})
-    # else:
-    # redirect('index')
     return render(request, 'index.html')
 
 
@@ -20,7 +13,6 @@ def kakao(request):
     locates.ku = request.GET['ku']
     locates.save()
     return render(request, 'kakao.html', {'locates': locates})
-    # return redirect('kakao')
 
 
 def google(request):
@@ -29,4 +21,3 @@ def google(request):
     lo.ku = request.GET['ku']
     lo.save()
     return render(request, 'google.html', {'locates': lo})
-    # return redirect('kakao')
