@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 {% block contents %}
+  <body>
   <br>
-  <h3>for kakao map</h3>
+  
+  <div class="container">
+<h3>for kakao map</h3>
+<br>
     <div id="map" style="width: 500px; height: 400px;"></div>
     <script
       type="text/javascript"
@@ -10,15 +14,17 @@
     <script>
       var container = document.getElementById("map");
       var options = {
-        center: new kakao.maps.LatLng({{locates.we}},{{locates.ku}}),
+        center: new kakao.maps.LatLng(37.576162, 127.182110),
         level: 3,
       };
 
       var map = new kakao.maps.Map(container, options);
     </script>
     <br>
+    <p>위도 : {{locates.we}}, 경도 : {{locates.ku}}
+    <br>
     <a href="{% url 'index'%}"> home으로 </a>
+    </div>
   </body>
-</html>
-
 {% endblock %}
+

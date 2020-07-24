@@ -15,4 +15,9 @@ def index(request):
 
 
 def kakao(request):
-    return render(request, 'kakao.html')
+    locates = Locate()
+    locates.we = request.GET['we']
+    locates.ku = request.GET['ku']
+    locates.save()
+    return render(request, 'kakao.html', {'locates': locates})
+    # return redirect('kakao')
