@@ -21,3 +21,12 @@ def kakao(request):
     locates.save()
     return render(request, 'kakao.html', {'locates': locates})
     # return redirect('kakao')
+
+
+def google(request):
+    lo = Locate()
+    lo.we = request.GET['we']
+    lo.ku = request.GET['ku']
+    lo.save()
+    return render(request, 'google.html', {'locates': lo})
+    # return redirect('kakao')

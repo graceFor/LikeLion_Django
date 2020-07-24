@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mapapp.views.index, name="index"),
     path('map/kakao/', mapapp.views.kakao, name="kakao"),
+    path('map/google/', mapapp.views.google, name="google"),
 ]
