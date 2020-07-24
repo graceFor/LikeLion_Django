@@ -12,9 +12,12 @@
       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=06eee32c30ee7e7d259c598a56468269"></script>
     ></script>
     <script>
+      var lat = {{locates.we}}
+      var lng = {{locates.ku}}
+
       var container = document.getElementById("map");
       var options = {
-        center: new kakao.maps.LatLng(37.576162, 127.182110),
+        center: new kakao.maps.LatLng(lat, lng),
         level: 3,
       };
 
